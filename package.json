@@ -4,8 +4,8 @@
   "description": "Server for skribble_clone",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
-    "dev": "nodemon ./index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Ziad Salama",
   "license": "ISC",
