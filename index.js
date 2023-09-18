@@ -11,13 +11,13 @@ const getWord = require('./api/getWord');
 // Middleware
 app.use(express.json());
 
-// Connect to MongoDB
-// const DB = 'mongodb+srv://ZEX99:HV9OBXqrdanBUA4e@cluster0.dcdsqou.mongodb.net/?retryWrites=true&w=majority';
-// mongoose.connect(DB).then(() => {
-//     console.log('Connected to MongoDB');
-// }).catch((e) => {
-//     console.log(e);
-// })
+Connect to MongoDB
+const DB = 'mongodb+srv://ZEX99:HV9OBXqrdanBUA4e@cluster0.dcdsqou.mongodb.net/?retryWrites=true&w=majority';
+mongoose.connect(DB).then(() => {
+    console.log('Connected to MongoDB');
+}).catch((e) => {
+    console.log(e);
+})
 
 io.on('connection', (socket) => {
     console.log('connected');
